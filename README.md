@@ -1,6 +1,4 @@
-# LCRN06 - Book Store App
-
-## [Watch it on YouTube](https://youtu.be/PEI38Pa8ZYM)
+# Book Library Application - Group 1
 
 In this episode of "Let’s Code React Native" series, we are going to build a beautiful Book Store APP based on the design created by Piko on Dribbble.
 
@@ -15,6 +13,6 @@ Be sure to subscribe to our YouTube channel for more videos like this!
 ## Contributors
 
 <a href="https://github.com/byprogrammers/LCRN06-book-store-app/graphs/contributors">
-   <img src="https://contrib.rocks/image?repo=byprogrammers/lets-code-react-native" />
+   <img src="https://www.facebook.com/photo/?fbid=1000303673662045&set=a.100263040332784" />
 </a>
 
