@@ -61,7 +61,7 @@ const BookDetail = ({ route, navigation }) => {
                 </View>
 
                 {/* Navigation header */}
-                <View style={{ flexDirection: 'row', paddingHorizontal: SIZES.radius, height: 80, alignItems: 'flex-end' }}>
+                <View style={{ flexDirection: 'row', paddingHorizontal: SIZES.radius, height: 40, alignItems: 'flex-end' }}>
                     <TouchableOpacity
                         style={{ marginLeft: SIZES.base }}
                         onPress={() => navigation.goBack()}

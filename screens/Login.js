@@ -34,11 +34,14 @@ const Login = ({navigation}) => {
                 secureTextEntry={true}
                 textContentType='password'
             />
-            <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
           <Text style={styles.fpText}>Forgot Password?</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('Home')}>
           <Text style={styles.loginButtonText}>Login</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('Home')}>
+          <Text style={styles.loginButtonText}>Login as Guest</Text>
         </TouchableOpacity>
             <View style={styles.loginWithBar}>
             <TouchableOpacity style={styles.iconButton}>

@@ -7,6 +7,7 @@ import Login from './screens/Login';
 import SignUp from './screens/SignUp';
 
 import Tabs from "./navigation/tabs";
+import ForgotPassword from './screens/ForgotPassword';
 
 const theme = {
     ...DefaultTheme,
@@ -28,6 +29,7 @@ const App = () => {
                 initialRouteName={'Login'}
             >
                 {/* Tabs */}
+                <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="SignUp" component={SignUp} />
                 <Stack.Screen name="Home" component={Tabs} />

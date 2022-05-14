@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\LCRN06-book-store-app-master\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\2b8cecbd1a5bf920f84180faef832e6a\\appcompat-1.4.1\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\907e47f1a44e1a2e55e0eb4a2e997d11\\appcompat-1.4.1\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

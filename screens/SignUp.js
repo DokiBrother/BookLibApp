@@ -8,7 +8,8 @@ import {
   Image,
   TouchableWithoutFeedback,
   TouchableOpacity,
-  SafeAreaView
+  SafeAreaView,
+  Alert
 } from 'react-native';
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
 
@@ -40,10 +41,10 @@ const SignUp = ({navigation}) => {
                 secureTextEntry={true}
                 textContentType='password'
             />
-            <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
           <Text style={styles.fpText}>Forgot Password?</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity style={styles.loginButton} onPress={() => Alert.alert('A confirmation email has been sent. Please check!')}>
           <Text style={styles.loginButtonText}>Sign Up</Text>
         </TouchableOpacity>
             <View style={styles.loginWithBar}>

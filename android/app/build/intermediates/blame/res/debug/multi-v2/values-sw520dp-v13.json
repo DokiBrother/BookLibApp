@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\LCRN06-book-store-app-master\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw520dp-v13\\values-sw520dp-v13.xml",
+            "outputFile": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw520dp-v13\\values-sw520dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\729c6bc4f6b80cc4d0bc2559565ae691\\jetified-pspdfkit-8.1.2\\res\\values-sw520dp-v13\\values-sw520dp-v13.xml",
+                    "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\values-sw520dp-v13\\values-sw520dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
