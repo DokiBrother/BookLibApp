@@ -4058,7 +4058,8 @@ int menu pspdf__menu_note_annotation_editor_options 0x7f0d0003
 int menu pspdf__menu_note_annotation_editor_toolbar 0x7f0d0004
 int menu pspdf__menu_pdf_outline_view 0x7f0d0005
 int mipmap ic_launcher 0x7f0e0000
-int mipmap ic_launcher_round 0x7f0e0001
+int mipmap ic_launcher_foreground 0x7f0e0001
+int mipmap ic_launcher_round 0x7f0e0002
 int plurals mtrl_badge_content_description 0x7f0f0000
 int plurals pspdf__annotations_number 0x7f0f0001
 int plurals pspdf__lines_number 0x7f0f0002

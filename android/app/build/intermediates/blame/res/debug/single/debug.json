@@ -284,12 +284,12 @@
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\907e47f1a44e1a2e55e0eb4a2e997d11\\appcompat-1.4.1\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_pspdf__electronic_signature_typing_font_view_holder.xml.flat",
-        "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\layout\\pspdf__electronic_signature_typing_font_view_holder.xml"
-    },
-    {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_switch_track.xml.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\907e47f1a44e1a2e55e0eb4a2e997d11\\appcompat-1.4.1\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_pspdf__electronic_signature_typing_font_view_holder.xml.flat",
+        "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\layout\\pspdf__electronic_signature_typing_font_view_holder.xml"
     },
     {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_pspdf__bg_page_pattern_5mm_line.png.flat",
@@ -472,12 +472,12 @@
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\drawable-xhdpi-v4\\pspdf__ic_lock.png"
     },
     {
-        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pspdf__uvv_itv_player_play.xml.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\drawable\\pspdf__uvv_itv_player_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_primary_emphasis_high_type.xml.flat",
@@ -554,6 +554,10 @@
     {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\907e47f1a44e1a2e55e0eb4a2e997d11\\appcompat-1.4.1\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
@@ -1208,6 +1212,10 @@
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\907e47f1a44e1a2e55e0eb4a2e997d11\\appcompat-1.4.1\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pspdf__rounded_rect.xml.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\drawable\\pspdf__rounded_rect.xml"
     },
@@ -1556,6 +1564,10 @@
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\drawable-xxhdpi-v4\\pspdf__text_select_handle_right.png"
     },
     {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_pspdf__ic_settings_vertical.png.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\drawable-xxhdpi-v4\\pspdf__ic_settings_vertical.png"
     },
@@ -1668,12 +1680,12 @@
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\3798d06d18b17583bca938c1c3c002d3\\material-1.5.0-alpha01\\res\\color\\mtrl_navigation_item_background_color.xml"
     },
     {
-        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\907e47f1a44e1a2e55e0eb4a2e997d11\\appcompat-1.4.1\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -3184,6 +3196,10 @@
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\37a370bc00400d6cb70aae561e7b8435\\play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\907e47f1a44e1a2e55e0eb4a2e997d11\\appcompat-1.4.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
@@ -3348,6 +3364,10 @@
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\drawable\\pspdf__ic_chevron_left.xml"
     },
     {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pspdf__ic_thumbnails.xml.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\656dd0d7746d3dd48d7f291aec144488\\jetified-pspdfkit-8.1.2\\res\\drawable\\pspdf__ic_thumbnails.xml"
     },
@@ -3398,6 +3418,10 @@
     {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\9aalh\\.gradle\\caches\\transforms-2\\files-2.1\\37a370bc00400d6cb70aae561e7b8435\\play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\9aalh\\Desktop\\Book Lib App\\Book Lib App\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light.xml.flat",

@@ -4059,6 +4059,7 @@ menu pspdf__menu_note_annotation_editor_options
 menu pspdf__menu_note_annotation_editor_toolbar
 menu pspdf__menu_pdf_outline_view
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 plurals pspdf__annotations_number
