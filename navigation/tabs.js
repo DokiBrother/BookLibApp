@@ -105,12 +105,12 @@ const Tabs = () => {
                 component={Category}
             />
             <Tab.Screen
-                name="Setting"
-                component={Setting}
-            />
-            <Tab.Screen
                 name="Profile"
                 component={Profile}
+            />
+            <Tab.Screen
+                name="Setting"
+                component={Setting}
             />
         </Tab.Navigator>
     )

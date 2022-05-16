@@ -1,6 +1,7 @@
 export const card_icon = require("../assets/icons/card_icon.png");
 export const claim_icon = require("../assets/icons/claim_icon.png");
 export const dashboard_icon = require("../assets/icons/dashboard_icon.png");
+export const dashboard_icon2 = require("../assets/icons/dashboard_icon2.png");
 export const notification_icon = require("../assets/icons/notification_icon.png");
 export const point_icon = require("../assets/icons/point_icon.png");
 export const search_icon = require("../assets/icons/search_icon.png");
@@ -21,6 +22,7 @@ export default {
     card_icon,
     claim_icon,
     dashboard_icon,
+    dashboard_icon2,
     notification_icon,
     point_icon,
     search_icon,

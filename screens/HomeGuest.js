@@ -210,7 +210,7 @@ const HomeGuest = ({ navigation }) => {
             <View style={{ flex: 1 }}>
                 {/* Header */}
                 <View style={{ paddingHorizontal: SIZES.padding, flexDirection: 'row', justifyContent: 'space-between' }}>
-                    <Text style={{ ...FONTS.h2, color: COLORS.white }}>Free Book</Text>
+                    <Text style={{ ...FONTS.h2, color: COLORS.white }}>New Release</Text>
 
                     <TouchableOpacity
                         onPress={() => console.log("See More")}
