@@ -13,7 +13,7 @@ export const bookOtherWordsForHome = {
     ],
     readed: "12k",
     description: "Jude never thought she’d be leaving her beloved older brother and father behind, all the way across the ocean in Syria. But when things in her hometown start becoming volatile, Jude and her mother are sent to live in Cincinnati with relatives. At first, everything in America seems too fast and too loud. The American movies that Jude has always loved haven’t quite prepared her for starting school in the US—and her new label of 'Middle Eastern,' an identity she’s never known before. But this life also brings unexpected surprises—there are new friends, a whole new family, and a school musical that Jude might just try out for. Maybe America, too, is a place where Jude can be seen as she really is.",
-    backgroundColor: "rgba(240,240,232,0.9)",
+    backgroundColor: "rgba(240,240,232,0.7)",
     navTintColor: "#000"
 }
 
@@ -30,7 +30,7 @@ export const bookTheMetropolis = {
     ],
     readed: "13k",
     description: "In Metropolis, the gleaming city of tomorrow, the dream of the great American city has been achieved. But all that is about to change, unless a neurotic, rule-following bureaucrat and an irreverent, freewheeling artificial intelligence can save the city from a mysterious terrorist plot that threatens its very existence. Henry Thompson has dedicated his life to improving America's infrastructure as a proud employee of the United States Municipal Survey. So when the agency comes under attack, he dutifully accepts his unexpected mission to visit Metropolis looking for answers. But his plans to investigate quietly, quickly, and carefully are interrupted by his new partner: a day-drinking know-it-all named OWEN, who also turns out to be the projected embodiment of the agency's supercomputer. Soon, Henry and OWEN are fighting to save not only their own lives and those of the city's millions of inhabitants, but also the soul of Metropolis. The Municipalists is a thrilling, funny, and touching adventure story, a tour-de-force of imagination that trenchantly explores our relationships to the cities around us and the technologies guiding us into the future.",
-    backgroundColor: "rgba(247,239,219,0.9)",
+    backgroundColor: "rgba(247,239,219,0.7)",
     navTintColor: "#000"
 }
 
@@ -47,8 +47,42 @@ export const bookTheTinyDragon = {
     ],
     readed: "13k",
     description: "This sketchbook for kids is the perfect tool to improve your drawing skills! Designed to encourage kids around the world to express their uniqueness through drawing, sketching or doodling, this sketch book is filled with 110 high quality blank pages for creations. Add some fun markers, crayons, and art supplies and you have the perfect, easy gift for kids!",
-    backgroundColor: "rgba(119,77,143,0.9)",
+    backgroundColor: "rgba(119,77,143,0.7)",
     navTintColor: "#FFF"
+}
+
+export const inTheLandOfLeadale = {
+    id: 4,
+    bookName: "In the land of Leadale",
+    bookCover: images.inTheLandOfLeadale,
+    rating: 4.5,
+    language: "Eng",
+    pageNo: 224,
+    author: "CEEZ",
+    genre: [
+        "SliceOfLife", "Adventure", "Drama"
+    ],
+    readed: "12k",
+    description: "The last thing she can remember is her life support beginning to fail. Her body had suffered terribly after a fateful accident and the only freedom left in her life came from the VR world of Leadale. How did she end up in a place that looks exactly like her game except that 200 years have apparently gone by?",
+    backgroundColor: "rgba(240,240,232,0.7)",
+    navTintColor: "#000"
+}
+
+export const spyXfamily = {
+    id: 5,
+    bookName: "Spy X Family",
+    bookCover: images.spyXfamily,
+    rating: 4.5,
+    language: "Eng",
+    pageNo: 'unknow',
+    author: "Tatsuya Endo",
+    genre: [
+        "Action", "Comedy"
+    ],
+    readed: "30M",
+    description: "The story follows a spy who has to build a family to execute a mission, not realizing that the girl he adopts as his daughter is a telepath, and the woman he agrees to be in a marriage with is a skilled assassin. The series has been serialized biweekly on Shueisha's Shōnen Jump+ application and website since March 2019, with the chapters collected in nine tankōbon volumes as of April 2022. It was licensed in North America by Viz Media.",
+    backgroundColor: "rgba(245, 217, 170, 0.7)",
+    navTintColor: "#000"
 }
 
 const myBooksData = [
@@ -69,6 +103,16 @@ const myBooksData = [
         completion: "10%",
         lastRead: "1d 2h",
 
+    },
+    {
+        ...inTheLandOfLeadale,
+        completion: "0%",
+        lastRead: "none"
+    },
+    {
+        ...spyXfamily,
+        completion:"",
+        lastRead: ""
     }
 ]
 
@@ -84,14 +128,14 @@ const trendData = [
         id: 2,
         trendName: "The Latest",
         books: [
-            bookTheMetropolis
+            bookTheMetropolis, inTheLandOfLeadale
         ]
     },
     {
         id: 3,
         trendName: "Coming Soon",
         books: [
-            bookTheTinyDragon
+            bookTheTinyDragon, spyXfamily
         ]
     },
 ]
@@ -101,6 +145,7 @@ export default {
     bookOtherWordsForHome,
     bookTheMetropolis,
     bookTheTinyDragon,
+    inTheLandOfLeadale,
     myBooksData,
     trendData
 }

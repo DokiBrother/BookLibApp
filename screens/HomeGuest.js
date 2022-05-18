@@ -326,6 +326,12 @@ const HomeGuest = ({ navigation }) => {
                                 {/* Genre */}
                                 <View style={{ flexDirection: 'row', marginTop: SIZES.base }}>
                                     {
+                                        item.genre.includes("Action") &&
+                                        <View style={{ justifyContent: 'center', alignItems: 'center', padding: SIZES.base, marginRight: SIZES.base, backgroundColor: COLORS.darkBlue, height: 40, borderRadius: SIZES.radius }}>
+                                            <Text style={{ ...FONTS.body3, color: COLORS.lightBlue }}>Action</Text>
+                                        </View>
+                                    }
+                                    {
                                         item.genre.includes("Adventure") &&
                                         <View style={{ justifyContent: 'center', alignItems: 'center', padding: SIZES.base, marginRight: SIZES.base, backgroundColor: COLORS.darkGreen, height: 40, borderRadius: SIZES.radius }}>
                                             <Text style={{ ...FONTS.body3, color: COLORS.lightGreen }}>Adventure</Text>
@@ -341,6 +347,18 @@ const HomeGuest = ({ navigation }) => {
                                         item.genre.includes("Drama") &&
                                         <View style={{ justifyContent: 'center', alignItems: 'center', padding: SIZES.base, marginRight: SIZES.base, backgroundColor: COLORS.darkBlue, height: 40, borderRadius: SIZES.radius }}>
                                             <Text style={{ ...FONTS.body3, color: COLORS.lightBlue }}>Drama</Text>
+                                        </View>
+                                    }
+                                    {
+                                        item.genre.includes("SliceOfLife") &&
+                                        <View style={{ justifyContent: 'center', alignItems: 'center', padding: SIZES.base, marginRight: SIZES.base, backgroundColor: COLORS.darkOrange, height: 40, borderRadius: SIZES.radius }}>
+                                            <Text style={{ ...FONTS.body3, color: COLORS.lightOrange }}>Slice of Life</Text>
+                                        </View>
+                                    }
+                                    {
+                                        item.genre.includes("Comedy") &&
+                                        <View style={{ justifyContent: 'center', alignItems: 'center', padding: SIZES.base, marginRight: SIZES.base, backgroundColor: COLORS.darkRed, height: 40, borderRadius: SIZES.radius }}>
+                                            <Text style={{ ...FONTS.body3, color: COLORS.lightRed }}>Comedy</Text>
                                         </View>
                                     }
                                 </View>

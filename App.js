@@ -13,6 +13,7 @@ import { AuthContext } from './navigation/AuthContext';
 import auth from '@react-native-firebase/auth';
 import { View } from 'react-native';
 import HomeGuest from './screens/HomeGuest';
+import ActionBook from './screens/ActionBook';
 
 const theme = {
     ...DefaultTheme,
@@ -77,6 +78,8 @@ const App = () => {
                     {/* Screens */}
                     <Stack.Screen name="BookDetail" component={BookDetail} options={{ headerShown: false }} />
                     <Stack.Screen name="ReadBook" component={ReadBook} options={{ headerShown: false }} />
+                    <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
+
                     
                 </Stack.Navigator>
             </NavigationContainer>
