@@ -23,10 +23,10 @@ const ReadBook = ({route, navigation}) => {
 
   const [book, setBook] = React.useState(null);
 
-  React.useEffect(() => {
-    let { book } = route.params;
-    setBook(book)
-  }, [book])
+  // React.useEffect(() => {
+  //   let { book } = route.params;
+  //   setBook(book)
+  // }, [book])
 
   const pdfView = React.createRef(null);
 

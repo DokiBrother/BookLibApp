@@ -58,7 +58,7 @@ const FindBook = ({navigation}) => {
     const ItemView = ({item}) => {
         return (
             <TouchableOpacity
-                onPress={() => Alert.alert('You choose ', item.title)}
+                onPress={() => navigation.navigate('ReadBook')}
             >
                 <Text style={{ ...FONTS.h2, color: COLORS.white, padding: 15}}>
                     {item.id}{'. '}{item.title}

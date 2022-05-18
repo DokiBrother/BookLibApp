@@ -14,6 +14,7 @@ import auth from '@react-native-firebase/auth';
 import { View } from 'react-native';
 import HomeGuest from './screens/HomeGuest';
 import ActionBook from './screens/ActionBook';
+import FindBook from './screens/FindBook';
 
 const theme = {
     ...DefaultTheme,
@@ -79,6 +80,7 @@ const App = () => {
                     <Stack.Screen name="BookDetail" component={BookDetail} options={{ headerShown: false }} />
                     <Stack.Screen name="ReadBook" component={ReadBook} options={{ headerShown: false }} />
                     <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
+                    <Stack.Screen name="FindBook" component={FindBook} options={{ headerShown: false }} />
 
                     
                 </Stack.Navigator>
@@ -102,6 +104,9 @@ const App = () => {
                     <Stack.Screen name="BookDetail" component={BookDetail} options={{ headerShown: false }} />
                     <Stack.Screen name="ReadBook" component={ReadBook} options={{ headerShown: false }} />
                     <Stack.Screen name="Home" component={Tabs} />
+                    <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
+                    <Stack.Screen name="FindBook" component={FindBook} options={{ headerShown: false }} />
+
                     
                 </Stack.Navigator>
             </NavigationContainer>
