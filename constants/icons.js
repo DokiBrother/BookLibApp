@@ -16,7 +16,10 @@ export const more_icon = require("../assets/icons/more_icon.png");
 export const setting_icon = require("../assets/icons/setting_icon.png");
 export const category_icon = require("../assets/icons/category_icon.png");
 export const profile_icon = require("../assets/icons/user_profile.png");
-export const love_icon =require("../assets/icons/heart_icon.png");
+export const love_icon = require("../assets/icons/heart_icon.png");
+export const edit_icon = require("../assets/icons/edit.png");
+export const location_icon = require('../assets/icons/location.png');
+export const facebook_icon = require('../assets/icons/facebook.png');
 
 export default {
     card_icon,
@@ -38,4 +41,7 @@ export default {
     category_icon,
     profile_icon,
     love_icon,
+    edit_icon,
+    location_icon,
+    facebook_icon,
 }
