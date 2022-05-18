@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
       marginTop: 10,
       paddingHorizontal: 10,
       fontSize: 16,
-      color: '#808e9b',
+      color: 'white',
     },
     fpText: {
       alignSelf: 'flex-start',
