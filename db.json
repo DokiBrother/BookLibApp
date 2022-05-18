@@ -1,0 +1,12 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "title": "Tên sách 1"
+    },
+    {
+      "id": 2,
+      "title": "Tên sách 2"
+    }
+  ]
+}

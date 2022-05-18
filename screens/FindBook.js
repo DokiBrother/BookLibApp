@@ -29,7 +29,7 @@ const FindBook = ({navigation}) => {
     }, [])
 
     const fetchBook = () => {
-        const apiURL = 'https://jsonplaceholder.typicode.com/albums'
+        const apiURL = 'http://192.168.1.9:3000/post'
         fetch(apiURL)
         .then((respone) => respone.json())
         .then((responeJson) => {
