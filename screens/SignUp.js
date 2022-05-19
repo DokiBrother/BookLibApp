@@ -19,6 +19,12 @@ const SignUp = ({navigation}) => {
             <Image style={styles.logo} source={require('../assets/icons/logoBookLibrary.png')} />
             <Text style={styles.loginText}>Register</Text>
             <TextInput
+                placeholder='Your name'
+                placeholderTextColor='#808e9b'
+                style={styles.input}
+                autoCorrect={true}
+            />
+            <TextInput
                 placeholder='Email Address'
                 placeholderTextColor='#808e9b'
                 style={styles.input}

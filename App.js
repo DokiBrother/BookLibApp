@@ -9,12 +9,9 @@ import Tabs from "./navigation/tabs";
 import TabGuest from './navigation/tabGuest';
 import ForgotPassword from './screens/ForgotPassword';
 
-import { AuthContext } from './navigation/AuthContext';
 import auth from '@react-native-firebase/auth';
-import { View } from 'react-native';
-import HomeGuest from './screens/HomeGuest';
-import ActionBook from './screens/ActionBook';
 import FindBook from './screens/FindBook';
+import ActionBook from './constants/ActionBook';
 
 const theme = {
     ...DefaultTheme,

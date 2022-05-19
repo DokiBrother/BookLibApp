@@ -23,6 +23,7 @@ export const facebook_icon = require('../assets/icons/facebook.png');
 export const share_icon = require('../assets/icons/share.png');
 export const about_icon = require('../assets/icons/about.png');
 export const feedback_icon = require('../assets/icons/feedback.png');
+export const call_icon = require('../assets/icons/call.png');
 
 export default {
     card_icon,
@@ -50,4 +51,5 @@ export default {
     share_icon,
     about_icon,
     feedback_icon,
+    call_icon,
 }

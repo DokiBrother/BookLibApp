@@ -8,13 +8,18 @@ import {
   Image,
   TouchableWithoutFeedback,
   TouchableOpacity,
-  SafeAreaView
+  SafeAreaView,
 } from 'react-native';
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
 
 const Login = ({navigation}) => {
     return (
         <SafeAreaView style={styles.container}>
+            <StatusBar
+                animated={true}
+                backgroundColor= {COLORS.black}
+                hidden={false}
+            />
             <Image style={styles.logo} source={require('../assets/icons/logoBookLibrary.png')} />
             <Text style={styles.loginText}>Login</Text>
             <TextInput

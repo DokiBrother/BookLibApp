@@ -7853,10 +7853,10 @@ public final class R {
         private xml() {}
 
         public static final int rn_dev_preferences = 0x7f140000;
-        public static final int standalone_badge = 0x7f140001;
-        public static final int standalone_badge_gravity_bottom_end = 0x7f140002;
-        public static final int standalone_badge_gravity_bottom_start = 0x7f140003;
-        public static final int standalone_badge_gravity_top_start = 0x7f140004;
-        public static final int standalone_badge_offset = 0x7f140005;
+        public static final int standalone_badge = 0x7f140002;
+        public static final int standalone_badge_gravity_bottom_end = 0x7f140003;
+        public static final int standalone_badge_gravity_bottom_start = 0x7f140004;
+        public static final int standalone_badge_gravity_top_start = 0x7f140005;
+        public static final int standalone_badge_offset = 0x7f140006;
     }
 }

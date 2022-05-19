@@ -6,7 +6,8 @@ import {
     TouchableOpacity,
     Image,
     ScrollView,
-    FlatList
+    FlatList,
+    StatusBar
 } from 'react-native';
 
 import { COLORS, FONTS, SIZES, icons, image, bookData } from '../constants';

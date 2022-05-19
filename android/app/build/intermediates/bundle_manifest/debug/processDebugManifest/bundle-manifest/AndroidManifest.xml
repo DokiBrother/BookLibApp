@@ -72,7 +72,17 @@
             android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name="com.pspdfkit.instant.ui.InstantPdfActivity"
-            android:windowSoftInputMode="adjustNothing" /> <!-- Printing pdf documents -->
+            android:windowSoftInputMode="adjustNothing" />
+
+        <provider
+            android:name="cl.json.RNShareFileProvider"
+            android:authorities="com.bookstoreapp.rnshare.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/share_download_paths" />
+        </provider> <!-- Printing pdf documents -->
         <activity
             android:name="com.pspdfkit.document.printing.PrintActivity"
             android:configChanges="orientation|screenSize"

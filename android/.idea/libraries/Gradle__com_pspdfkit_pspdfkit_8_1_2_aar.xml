@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pspdfkit:pspdfkit:8.1.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/656dd0d7746d3dd48d7f291aec144488/jetified-pspdfkit-8.1.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/656dd0d7746d3dd48d7f291aec144488/jetified-pspdfkit-8.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/656dd0d7746d3dd48d7f291aec144488/jetified-pspdfkit-8.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/656dd0d7746d3dd48d7f291aec144488/jetified-pspdfkit-8.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pspdfkit/pspdfkit/8.1.2/dc52e77d2a942407d9f148facb4f8d0ddeedf95d/pspdfkit-8.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

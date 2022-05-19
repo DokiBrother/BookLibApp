@@ -11,7 +11,7 @@ import {
     Alert
 } from 'react-native';
 
-import { COLORS, FONTS, SIZES, icons, images } from '../constants';
+import { COLORS, FONTS, SIZES, icons, images } from '.';
 
 const LineDivider = () => {
     return (

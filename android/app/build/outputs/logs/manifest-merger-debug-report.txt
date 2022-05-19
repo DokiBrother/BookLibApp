@@ -16,6 +16,7 @@ MERGED from [:react-native-pspdfkit] C:\Users\9aalh\Desktop\Book Lib App\Book Li
 MERGED from [:react-native-reanimated] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-21:12
 MERGED from [:react-native-vector-icons] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\9aalh\.gradle\caches\transforms-2\files-2.1\e6f7884f7e3dd3df14b89797479a77c0\jetified-react-native-0.63.3\AndroidManifest.xml:2:1-13:12
 MERGED from [com.pspdfkit:pspdfkit:8.1.2] C:\Users\9aalh\.gradle\caches\transforms-2\files-2.1\656dd0d7746d3dd48d7f291aec144488\jetified-pspdfkit-8.1.2\AndroidManifest.xml:14:1-57:12
@@ -142,6 +143,8 @@ MERGED from [:react-native-firebase_app] C:\Users\9aalh\Desktop\Book Lib App\Boo
 MERGED from [:react-native-firebase_app] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-27:19
 MERGED from [:react-native-pspdfkit] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-pspdfkit\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:5-33:19
 MERGED from [:react-native-pspdfkit] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-pspdfkit\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:5-33:19
+MERGED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-19:19
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\9aalh\.gradle\caches\transforms-2\files-2.1\e6f7884f7e3dd3df14b89797479a77c0\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\9aalh\.gradle\caches\transforms-2\files-2.1\e6f7884f7e3dd3df14b89797479a77c0\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
 MERGED from [com.pspdfkit:pspdfkit:8.1.2] C:\Users\9aalh\.gradle\caches\transforms-2\files-2.1\656dd0d7746d3dd48d7f291aec144488\jetified-pspdfkit-8.1.2\AndroidManifest.xml:29:5-55:19
@@ -260,6 +263,8 @@ MERGED from [:react-native-safe-area-context] C:\Users\9aalh\Desktop\Book Lib Ap
 MERGED from [:react-native-safe-area-context] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\9aalh\.gradle\caches\transforms-2\files-2.1\e6f7884f7e3dd3df14b89797479a77c0\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
@@ -508,6 +513,22 @@ ADDED from [:react-native-pspdfkit] C:\Users\9aalh\Desktop\Book Lib App\Book Lib
 		ADDED from [:react-native-pspdfkit] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-pspdfkit\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-56
 	android:name
 		ADDED from [:react-native-pspdfkit] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-pspdfkit\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-70
+provider#cl.json.RNShareFileProvider
+ADDED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-55
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-17:64
+	android:resource
+		ADDED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-61
+	android:name
+		ADDED from [:react-native-share] C:\Users\9aalh\Desktop\Book Lib App\Book Lib App\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
 uses-permission#android.permission.RECORD_AUDIO
 ADDED from [com.pspdfkit:pspdfkit:8.1.2] C:\Users\9aalh\.gradle\caches\transforms-2\files-2.1\656dd0d7746d3dd48d7f291aec144488\jetified-pspdfkit-8.1.2\AndroidManifest.xml:22:5-71
 	android:name

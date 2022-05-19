@@ -43,8 +43,8 @@ const Profile = ({navigation}) => {
                         source={item.bookCover}
                         resizeMode="cover"
                         style={{
-                            width: 80,
-                            height: 100,
+                            width: 120,
+                            height: 170,
                             borderRadius: 15
                         }}
                     />

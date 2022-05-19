@@ -6,12 +6,13 @@ import {
     TouchableOpacity,
     Image,
     ScrollView,
-    FlatList,
+    Linking,
     StyleSheet,
-    Alert
+    Alert,
 } from 'react-native';
 
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
+import onShare from "../constants/shareApp";
 
 const LineDivider = () => {
     return (
@@ -29,8 +30,10 @@ const LineDivider2 = () => {
 
 
 const Setting = ({navigation}) => {
+
     return (
         <SafeAreaView style={styles.container}>
+          <ScrollView showsVerticalScrollIndicator={false}>
             <Text style={styles.headerSetting}>Setting</Text>
             <LineDivider/>
 
@@ -49,7 +52,7 @@ const Setting = ({navigation}) => {
               </TouchableOpacity>
 
               
-              <TouchableOpacity style={{marginTop: 20}}>
+              <TouchableOpacity style={{marginTop: 20}} onPress={onShare}>
                 <View style={styles.chooseButton} >
                   <Text style={{...FONTS.body2, color: COLORS.white}}>Share</Text>
                   <Image
@@ -61,7 +64,11 @@ const Setting = ({navigation}) => {
                 <LineDivider2/>
               </TouchableOpacity>
 
-              <TouchableOpacity style={{marginTop: 20}}>
+              <TouchableOpacity
+                style={{marginTop: 20}}
+                onPress={() => 
+                  Linking.openURL('mailto:tuando.contact@gmail.com?subject=Customer Feedback&body=Write down your feedback here!')} >
+
                 <View style={styles.chooseButton} >
                   <Text style={{...FONTS.body2, color: COLORS.white}}>Feedback</Text>
                   <Image
@@ -73,7 +80,25 @@ const Setting = ({navigation}) => {
                 <LineDivider2/>
               </TouchableOpacity>
 
-              <TouchableOpacity style={{marginTop: 20}}>
+              <TouchableOpacity
+                style={{marginTop: 20}}
+                onPress={() => Linking.openURL('tel:+84979046630')}
+              >
+                <View style={styles.chooseButton} >
+                  <Text style={{...FONTS.body2, color: COLORS.white}}>Call us</Text>
+                  <Image
+                    source={icons.call_icon}
+                    resizeMode='contain'
+                    style={styles.iconImg}
+                  />
+                </View>
+                <LineDivider2/>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={{marginTop: 20}}
+                onPress={() => Linking.openURL('https://www.facebook.com/tuando.contact/')}
+              >
                 <View style={styles.chooseButton} >
                   <Text style={{...FONTS.body2, color: COLORS.white}}>About us</Text>
                   <Image
@@ -87,7 +112,7 @@ const Setting = ({navigation}) => {
 
             </View>
             <Image style={styles.logo} source={require('../assets/icons/logoBookLibrary.png')} />
-
+          </ScrollView>
         </SafeAreaView>
     );
 }
@@ -121,8 +146,8 @@ const styles = StyleSheet.create({
     },
     logo: {
       marginTop: 20,
-      height: 200,
-      width: 200,
+      height: 150,
+      width: 150,
       alignSelf: 'center',
       resizeMode: 'contain'
     },
