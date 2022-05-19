@@ -17,6 +17,8 @@ import org.reactnative.maskedview.RNCMaskedViewPackage;
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 // @react-native-firebase/auth
 import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
+// @react-native-google-signin/google-signin
+import com.reactnativegooglesignin.RNGoogleSigninPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-pspdfkit
@@ -79,6 +81,7 @@ public class PackageList {
       new RNCMaskedViewPackage(),
       new ReactNativeFirebaseAppPackage(),
       new ReactNativeFirebaseAuthPackage(),
+      new RNGoogleSigninPackage(),
       new RNGestureHandlerPackage(),
       new PSPDFKitPackage(),
       new ReanimatedPackage(),

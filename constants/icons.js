@@ -24,6 +24,8 @@ export const share_icon = require('../assets/icons/share.png');
 export const about_icon = require('../assets/icons/about.png');
 export const feedback_icon = require('../assets/icons/feedback.png');
 export const call_icon = require('../assets/icons/call.png');
+export const school_icon = require('../assets/icons/graduation-hat.png');
+export const exit_icon = require('../assets/icons/exit.png');
 
 export default {
     card_icon,
@@ -52,4 +54,6 @@ export default {
     about_icon,
     feedback_icon,
     call_icon,
+    school_icon,
+    exit_icon,
 }

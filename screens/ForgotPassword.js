@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   StyleSheet,
   Text,
@@ -12,8 +12,25 @@ import {
   Alert
 } from 'react-native';
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
+import auth from '@react-native-firebase/auth';
+import SignInWithGoogle from '../service/SignInWithGoogle';
 
-const ForgotPassword = ({navigation}) => {
+  const ForgotPassword = ({navigation}) => {
+
+  const [email, setEmail] = useState(null);
+  const [errorMsg, setErrorMsg] = useState(null);
+
+  const requestResetPass = () => {
+      auth()
+      .sendPasswordResetEmail(email)
+      .then(setErrorMsg('A password reset message was sent to your mail address. Please check your mail and following the instruction.'))
+      .catch(error => {
+          if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
+              setErrorMsg('Incorrect username or password.');
+          }
+          console.log(error);
+      })
+  }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -28,13 +45,15 @@ const ForgotPassword = ({navigation}) => {
                 autoCompleteType='email'
                 keyboardType='email-address'
                 textContentType='emailAddress'
+                value={email}
+                onChangeText={setEmail}
             />
             <TouchableOpacity>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginButton} onPress={() => Alert.alert('A reset password link has been sent. Please check your email!')}>
+        <TouchableOpacity style={styles.loginButton} onPress={requestResetPass}>
           <Text style={styles.loginButtonText}>Reset</Text>
         </TouchableOpacity>
-            <View style={styles.loginWithBar}>
+            <View style={styles.loginWithBar} onPress={SignInWithGoogle} >
             <TouchableOpacity style={styles.iconButton}>
               <Image style={styles.icons} source={require('../assets/icons/google-plus.png')} />
             </TouchableOpacity>

@@ -13,6 +13,7 @@ import {
 
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
 import onShare from "../constants/shareApp";
+import auth from '@react-native-firebase/auth';
 
 const LineDivider = () => {
     return (
@@ -28,8 +29,13 @@ const LineDivider2 = () => {
   )
 }
 
-
 const Setting = ({navigation}) => {
+
+    // firebase log out
+    const LogOut = () => {
+      auth()
+      .signOut()
+    }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -97,12 +103,12 @@ const Setting = ({navigation}) => {
 
               <TouchableOpacity
                 style={{marginTop: 20}}
-                onPress={() => Linking.openURL('https://www.facebook.com/tuando.contact/')}
+                onPress={LogOut}
               >
                 <View style={styles.chooseButton} >
-                  <Text style={{...FONTS.body2, color: COLORS.white}}>About us</Text>
+                  <Text style={{...FONTS.body2, color: COLORS.white}}>Sign out</Text>
                   <Image
-                    source={icons.about_icon}
+                    source={icons.exit_icon}
                     resizeMode='contain'
                     style={styles.iconImg}
                   />

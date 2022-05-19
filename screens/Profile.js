@@ -125,14 +125,14 @@ const Profile = ({navigation}) => {
                         {/* Home */}
                         <View style={styles.info}>
                             <Image
-                                source={icons.location_icon}
+                                source={icons.school_icon}
                                 style={{
                                     width: 25,
                                     height: 25,
                                     tintColor: COLORS.white
                                 }}
                             />
-                            <Text style={{...FONTS.body3, color: COLORS.white, marginLeft: 10}} >Hải Phòng</Text>
+                            <Text style={{...FONTS.body3, color: COLORS.white, marginLeft: 10}} >VNU-IS</Text>
                         </View>
                         <LineDivider/>
 

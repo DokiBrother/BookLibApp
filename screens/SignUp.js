@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   StyleSheet,
   Text,
@@ -11,67 +11,115 @@ import {
   SafeAreaView,
   Alert
 } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
+import auth from '@react-native-firebase/auth';
+import SignInWithGoogle from '../service/SignInWithGoogle';
 
 const SignUp = ({navigation}) => {
+
+  const [namecalled, onChangeNameCalled] = React.useState();
+  const [email, onChangeEmail] = React.useState(null);
+  const [pass, onChangePass] = React.useState(null);
+  const [confirmPass, onChangeConfirmPass] = React.useState(null);
+
+
+  const SignUpMethod = () => {
+    auth()
+    .createUserWithEmailAndPassword(email, pass)
+    .then(() => {
+        auth().currentUser.updateProfile({
+            displayName: namecalled,
+            photoURL: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'
+        });
+    })
+    .catch(error => {
+        if (error.code === 'auth/email-already-in-use') {
+        console.log('That email address is already in use!');
+        }
+        if (error.code === 'auth/invalid-email') {
+        console.log('That email address is invalid!');
+        }
+        console.error(error);
+    });
+    // auth().currentUser.sendEmailVerification
+}
+
     return (
         <SafeAreaView style={styles.container}>
+          
             <Image style={styles.logo} source={require('../assets/icons/logoBookLibrary.png')} />
-            <Text style={styles.loginText}>Register</Text>
-            <TextInput
-                placeholder='Your name'
-                placeholderTextColor='#808e9b'
-                style={styles.input}
-                autoCorrect={true}
-            />
-            <TextInput
-                placeholder='Email Address'
-                placeholderTextColor='#808e9b'
-                style={styles.input}
-                autoCorrect={true}
-                autoCompleteType='email'
-                keyboardType='email-address'
-                textContentType='emailAddress'
-            />
-            <TextInput
-                placeholder='Password'
-                placeholderTextColor='#808e9b'
-                style={styles.input}
-                secureTextEntry={true}
-                textContentType='password'
-            />
-            <TextInput
-                placeholder='Confirm Password'
-                placeholderTextColor='#808e9b'
-                style={styles.input}
-                secureTextEntry={true}
-                textContentType='password'
-            />
-        <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
-          <Text style={styles.fpText}>Forgot Password?</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.loginButton} onPress={() => Alert.alert('A confirmation email has been sent. Please check!')}>
-          <Text style={styles.loginButtonText}>Sign Up</Text>
-        </TouchableOpacity>
-            <View style={styles.loginWithBar}>
-            <TouchableOpacity style={styles.iconButton}>
-              <Image style={styles.icons} source={require('../assets/icons/google-plus.png')} />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.iconButton}>
-              <Image style={styles.icons} source={require('../assets/icons/facebook.png')} />  
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.iconButton}>
-              <Image style={styles.icons} source={require('../assets/icons/twitter.png')} />  
-            </TouchableOpacity>
-            </View>
-            <View style={styles.signUpTextView}>
-            <Text style={styles.signUpText}>Already have an account?</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Login') }>
-                <Text style={[styles.signUpText, { color: COLORS.primary }]}>
-                {' Login '}
-                </Text>
-            </TouchableOpacity>
-            </View>
+            <ScrollView showsVerticalScrollIndicator={false}>
+              <Text style={styles.loginText}>Register</Text>
+              <TextInput
+                  placeholder='Your name'
+                  placeholderTextColor='#808e9b'
+                  style={styles.input}
+                  autoCorrect={true}
+                  value={namecalled}
+                  onChangeText={onChangeNameCalled}
+              />
+              <TextInput
+                  placeholder='Your student ID'
+                  placeholderTextColor='#808e9b'
+                  style={styles.input}
+                  autoCorrect={true}
+              />
+              <TextInput
+                  placeholder='Email Address'
+                  placeholderTextColor='#808e9b'
+                  style={styles.input}
+                  autoCorrect={true}
+                  autoCompleteType='email'
+                  keyboardType='email-address'
+                  textContentType='emailAddress'
+                  value={email}
+                  onChangeText={onChangeEmail}
+              />
+              <TextInput
+                  placeholder='Password'
+                  placeholderTextColor='#808e9b'
+                  style={styles.input}
+                  secureTextEntry={true}
+                  textContentType='password'
+                  value={pass}
+                  onChangeText={onChangePass}
+              />
+              <TextInput
+                  placeholder='Confirm Password'
+                  placeholderTextColor='#808e9b'
+                  style={styles.input}
+                  secureTextEntry={true}
+                  textContentType='password'
+                  value={confirmPass}
+                  onChangeText={onChangeConfirmPass}
+              />
+          <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
+            <Text style={styles.fpText}>Forgot Password?</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.loginButton} onPress={SignUpMethod}>
+            <Text style={styles.loginButtonText}>Sign Up</Text>
+          </TouchableOpacity>
+              <View style={styles.loginWithBar}>
+              <TouchableOpacity style={styles.iconButton} onPress={SignInWithGoogle} >
+                <Image style={styles.icons} source={require('../assets/icons/google-plus.png')} />
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.iconButton}>
+                <Image style={styles.icons} source={require('../assets/icons/facebook.png')} />  
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.iconButton}>
+                <Image style={styles.icons} source={require('../assets/icons/twitter.png')} />  
+              </TouchableOpacity>
+              </View>
+              <View style={styles.signUpTextView}>
+              <Text style={styles.signUpText}>Already have an account?</Text>
+              <TouchableOpacity onPress={() => navigation.navigate('Login') }>
+                  <Text style={[styles.signUpText, { color: COLORS.primary }]}>
+                  {' Login '}
+                  </Text>
+              </TouchableOpacity>
+              </View>
+            </ScrollView>
         </SafeAreaView>
     );
 }

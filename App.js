@@ -58,7 +58,6 @@ const App = () => {
 
     if (initializing) return null;
 
-    if (!user) {
         return (
             <NavigationContainer theme={theme}>
                 <Stack.Navigator
@@ -67,47 +66,28 @@ const App = () => {
                     }}
                     initialRouteName={'Login'}
                 >
-                    {/* Tabs */}
-                    <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
-                    <Stack.Screen name="Login" component={Login} />
-                    <Stack.Screen name="SignUp" component={SignUp} />
-                    <Stack.Screen name="Home" component={TabGuest} />
-
-                    {/* Screens */}
-                    <Stack.Screen name="BookDetail" component={BookDetail} options={{ headerShown: false }} />
-                    <Stack.Screen name="ReadBook" component={ReadBook} options={{ headerShown: false }} />
-                    <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
-                    <Stack.Screen name="FindBook" component={FindBook} options={{ headerShown: false }} />
-
-                    
+                    {user == null ? (
+                        <>
+                            {/* Tabs */}
+                            <Stack.Screen name="Login" component={Login} />
+                            <Stack.Screen name="SignUp" component={SignUp} />
+                            <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+                        </>
+                    ):(
+                        <>
+                            {/* Screens */}
+                            <Stack.Screen name="Home" component={Tabs} options={{ headerShown: false }} />
+                            <Stack.Screen name="BookDetail" component={BookDetail} options={{ headerShown: false }} />
+                            <Stack.Screen name="ReadBook" component={ReadBook} options={{ headerShown: false }} />
+                            <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
+                            <Stack.Screen name="FindBook" component={FindBook} options={{ headerShown: false }} />
+                        </>
+                    )
+                    }
                 </Stack.Navigator>
             </NavigationContainer>
         )
-    }
-    return (
-        <NavigationContainer theme={theme}>
-                <Stack.Navigator
-                    screenOptions={{
-                        headerShown: false
-                    }}
-                    initialRouteName={'Login'}
-                >
-                    {/* Tabs */}
-                    <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
-                    <Stack.Screen name="Login" component={Login} />
-                    <Stack.Screen name="SignUp" component={SignUp} />
-                    
-                    {/* Screens */}
-                    <Stack.Screen name="BookDetail" component={BookDetail} options={{ headerShown: false }} />
-                    <Stack.Screen name="ReadBook" component={ReadBook} options={{ headerShown: false }} />
-                    <Stack.Screen name="Home" component={Tabs} />
-                    <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
-                    <Stack.Screen name="FindBook" component={FindBook} options={{ headerShown: false }} />
 
-                    
-                </Stack.Navigator>
-            </NavigationContainer>
-    );
 }
 
 export default App;
