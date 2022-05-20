@@ -4,7 +4,7 @@
 
 | Project | Preview | No. of Screens |
 | ------ | ------ | ------ |
-| Book Library Application| <img src="https://cdn.dribbble.com/users/803221/screenshots/14118636/media/230da812c084a283acd15f7425106ae2.png?compress=1&resize=1200x900" width="120" /> | 10 |
+| Book Library Application| <img src="https://i.imgur.com/E9PXWwb.png?compress=1&resize=1200x900" width="120" /> <img src="https://i.imgur.com/1w1Hpzn.png?compress=1&resize=1200x900" width="120" /> <img src="https://i.imgur.com/v7eDkiO.png?compress=1&resize=1200x900" width="120" /> | 10 |
 
 ## Contributors
 
