@@ -8,11 +8,11 @@
 
 ## Contributors
 
-Cao Dinh Khoi
-Le Thanh Thao
-Ngo Quang Truong
-Do Cong Tuan
-Nguyen Nam Son
+- Cao Dinh Khoi
+- Le Thanh Thao
+- Ngo Quang Truong
+- Do Cong Tuan
+- Nguyen Nam Son
 
 
 
