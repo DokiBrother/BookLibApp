@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "430169955606",
+    "firebase_url": "https://book-library-app-group1-default-rtdb.firebaseio.com",
     "project_id": "book-library-app-group1",
     "storage_bucket": "book-library-app-group1.appspot.com"
   },
@@ -13,6 +14,22 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "430169955606-mbsh59iq3qnlki02buevgdc7ha7gqba1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookstoreapp",
+            "certificate_hash": "bac63babe4fcc9f21d250bd2bd3bdf5fee1910e2"
+          }
+        },
+        {
+          "client_id": "430169955606-u7sj49ep12rq10bi67l4knpm0t3op04u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookstoreapp",
+            "certificate_hash": "2443f06d2becc3c7962d4e000d156e6db3b679df"
+          }
+        },
         {
           "client_id": "430169955606-ce82fihj8h9g19rsitum2latsp7ohe45.apps.googleusercontent.com",
           "client_type": 3

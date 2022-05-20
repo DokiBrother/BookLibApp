@@ -13,6 +13,7 @@ import {
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
 import auth from '@react-native-firebase/auth';
 import SignInWithGoogle from '../service/SignInWithGoogle';
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
 
 const Login = ({navigation}) => {
 

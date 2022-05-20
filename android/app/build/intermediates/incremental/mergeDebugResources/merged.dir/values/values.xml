@@ -1845,6 +1845,7 @@
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="firebase_database_url" translatable="false">https://book-library-app-group1-default-rtdb.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">430169955606</string>
     <string name="google_api_key" translatable="false">AIzaSyBdKjOpIyyQoAm41xXD2l3Xu15zARWtdKY</string>
     <string name="google_app_id" translatable="false">1:430169955606:android:48ec99263ad3de52754437</string>
