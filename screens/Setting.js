@@ -14,6 +14,8 @@ import {
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
 import onShare from "../constants/shareApp";
 import auth from '@react-native-firebase/auth';
+import SignInWithGoogle from "../service/SignInWithGoogle";
+import { GoogleSignin } from "@react-native-google-signin/google-signin";
 
 const LineDivider = () => {
     return (
@@ -35,7 +37,17 @@ const Setting = ({navigation}) => {
     const LogOut = () => {
       auth()
       .signOut()
+      GoogleSignin.signOut()
     }
+
+    // const signOutGoogle = async () => {
+    //   try {
+    //     await GoogleSignin.signOut();
+    //     this.setState({ user: null });
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -44,19 +56,18 @@ const Setting = ({navigation}) => {
             <LineDivider/>
 
             <View style={{width: '90%', alignSelf: 'center'}}>
-
-              <TouchableOpacity style={{marginTop: 20}} onPress={() => navigation.navigate('ChangePassword') } >
-                <View style={styles.chooseButton} >
-                  <Text style={{...FONTS.body2, color: COLORS.white}}>Change password</Text>
-                  <Image
-                    source={icons.edit_icon}
-                    resizeMode='contain'
-                    style={styles.iconImg}
-                  />
-                </View>
-                <LineDivider2/>
-              </TouchableOpacity>
-
+                <TouchableOpacity style={{marginTop: 20}} onPress={() => navigation.navigate('ChangePassword') } >
+                  <View style={styles.chooseButton} >
+                    <Text style={{...FONTS.body2, color: COLORS.white}}>Change password</Text>
+                    <Image
+                      source={icons.edit_icon}
+                      resizeMode='contain'
+                      style={styles.iconImg}
+                    />
+                  </View>
+                  <LineDivider2/>
+                </TouchableOpacity>
+            
               
               <TouchableOpacity style={{marginTop: 20}} onPress={onShare}>
                 <View style={styles.chooseButton} >
@@ -100,21 +111,21 @@ const Setting = ({navigation}) => {
                 </View>
                 <LineDivider2/>
               </TouchableOpacity>
-
-              <TouchableOpacity
-                style={{marginTop: 20}}
-                onPress={LogOut}
-              >
-                <View style={styles.chooseButton} >
-                  <Text style={{...FONTS.body2, color: COLORS.white}}>Sign out</Text>
-                  <Image
-                    source={icons.exit_icon}
-                    resizeMode='contain'
-                    style={styles.iconImg}
-                  />
-                </View>
-                <LineDivider2/>
-              </TouchableOpacity>
+              
+                <TouchableOpacity
+                  style={{marginTop: 20}}
+                  onPress={LogOut}
+                >
+                  <View style={styles.chooseButton} >
+                    <Text style={{...FONTS.body2, color: COLORS.white}}>Sign out</Text>
+                    <Image
+                      source={icons.exit_icon}
+                      resizeMode='contain'
+                      style={styles.iconImg}
+                    />
+                  </View>
+                  <LineDivider2/>
+                </TouchableOpacity>
 
             </View>
             <TouchableOpacity onPress={() => Linking.openURL('https://www.facebook.com/Book-Library-Application-113200274468283/?notif_id=1653006980874395&notif_t=page_name_change_admin&ref=notif') } >

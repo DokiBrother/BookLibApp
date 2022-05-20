@@ -13,6 +13,8 @@ import auth from '@react-native-firebase/auth';
 import FindBook from './screens/FindBook';
 import ActionBook from './constants/ActionBook';
 import ChangePassword from './screens/ChangePassword';
+import Setting from './screens/Setting';
+import SettingGuest from './screens/SettingGuest';
 
 const theme = {
     ...DefaultTheme,
@@ -73,6 +75,12 @@ const App = () => {
                             <Stack.Screen name="Login" component={Login} />
                             <Stack.Screen name="SignUp" component={SignUp} />
                             <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+                            <Stack.Screen name="Home" component={TabGuest} options={{ headerShown: false }} />
+                            <Stack.Screen name="BookDetail" component={BookDetail} options={{ headerShown: false }} />
+                            <Stack.Screen name="ReadBook" component={ReadBook} options={{ headerShown: false }} />
+                            <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
+                            <Stack.Screen name="FindBook" component={FindBook} options={{ headerShown: false }} />
+                            <Stack.Screen name="SettingGuest" component={SettingGuest} options={{ headerShown: false }} />
                         </>
                     ):(
                         <>
@@ -83,6 +91,7 @@ const App = () => {
                             <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
                             <Stack.Screen name="FindBook" component={FindBook} options={{ headerShown: false }} />
                             <Stack.Screen name="ChangePassword" component={ChangePassword} options={{ headerShown: false }} />
+                            <Stack.Screen name="Setting" component={Setting} options={{ headerShown: false }} />
                         </>
                     )
                     }

@@ -32,7 +32,7 @@ const SignUp = ({navigation}) => {
     .then(() => {
         auth().currentUser.updateProfile({
             displayName: namecalled,
-            photoURL: 'https://firebasestorage.googleapis.com/v0/b/book-library-app-group1.appspot.com/o/profile.jpg?alt=media&token=ca604ace-0410-43df-9946-2bde2c90c0b8'
+            photoURL: 'https://i.imgur.com/qUNTWp1.jpg'
         });
     })
     .catch(error => {
