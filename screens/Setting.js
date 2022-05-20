@@ -45,7 +45,7 @@ const Setting = ({navigation}) => {
 
             <View style={{width: '90%', alignSelf: 'center'}}>
 
-              <TouchableOpacity style={{marginTop: 20}}>
+              <TouchableOpacity style={{marginTop: 20}} onPress={() => navigation.navigate('ChangePassword') } >
                 <View style={styles.chooseButton} >
                   <Text style={{...FONTS.body2, color: COLORS.white}}>Change password</Text>
                   <Image
@@ -117,7 +117,9 @@ const Setting = ({navigation}) => {
               </TouchableOpacity>
 
             </View>
-            <Image style={styles.logo} source={require('../assets/icons/logoBookLibrary.png')} />
+            <TouchableOpacity onPress={() => Linking.openURL('https://www.facebook.com/Book-Library-Application-113200274468283/?notif_id=1653006980874395&notif_t=page_name_change_admin&ref=notif') } >
+              <Image style={styles.logo} source={require('../assets/icons/logoBookLibrary.png')} />
+            </TouchableOpacity>
           </ScrollView>
         </SafeAreaView>
     );

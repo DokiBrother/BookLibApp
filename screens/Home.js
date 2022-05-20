@@ -9,6 +9,7 @@ import {
     FlatList,
     StatusBar
 } from 'react-native';
+import auth from '@react-native-firebase/auth';
 
 import { COLORS, FONTS, SIZES, icons, image, bookData } from '../constants';
 
@@ -31,6 +32,7 @@ const Home = ({ navigation }) => {
     const [myBooks, setMyBooks] = React.useState(bookData.myBooksData);
     const [trend, setTrend] = React.useState(bookData.trendData);
     const [selectedTrend, setSelectedTrend] = React.useState(1);
+    const user = auth().currentUser;
 
     function renderHeader(profile) {
         return (
@@ -39,7 +41,7 @@ const Home = ({ navigation }) => {
                 <View style={{ flex: 1 }}>
                     <View style={{ marginRight: SIZES.padding }}>
                         <Text style={{ ...FONTS.h3, color: COLORS.white }}>Welcome</Text>
-                        <Text style={{ ...FONTS.h2, color: COLORS.white }}>{profile.name}</Text>
+                        <Text style={{ ...FONTS.h2, color: COLORS.white }}>{user.displayName}</Text>
                     </View>
                 </View>
 
@@ -209,6 +211,11 @@ const Home = ({ navigation }) => {
 
         return (
             <View style={{ flex: 1 }}>
+                <StatusBar
+                    animated={true}
+                    backgroundColor= {COLORS.black}
+                    hidden={false}
+                />
                 {/* Header */}
                 <View style={{ paddingHorizontal: SIZES.padding, flexDirection: 'row', justifyContent: 'space-between' }}>
                     <Text style={{ ...FONTS.h2, color: COLORS.white }}>Free Book</Text>

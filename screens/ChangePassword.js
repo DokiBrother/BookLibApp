@@ -13,67 +13,55 @@ import {
 } from 'react-native';
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
 import auth from '@react-native-firebase/auth';
-import SignInWithGoogle from '../service/SignInWithGoogle';
 
-  const ForgotPassword = ({navigation}) => {
+  const ChangePassword = ({navigation}) => {
 
-  const [email, setEmail] = useState(null);
+  const [pass, setPass] = useState(null);
+  const [confirmPass, setConfirmPass] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
+  const user = auth().currentUser;
 
-  const requestResetPass = () => {
-      auth()
-      .sendPasswordResetEmail(email)
-      .then(setErrorMsg('A password reset message was sent to your mail address. Please check your mail and following the instruction.'))
-      .catch(error => {
-          if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
-              setErrorMsg('Incorrect username or password.');
-          }
-          console.log(error);
-      })
-      Alert.alert('An reset link has been sent via your email. Please check!');
-      navigation.goBack();
+  const updatePassword = () => {
+    if(pass!=null && confirmPass!=null){
+      user.updatePassword(pass)
+    }
+    Alert.alert('Your password has been reset')
+    navigation.goBack()
   }
+
+
 
     return (
         <SafeAreaView style={styles.container}>
             <Image style={styles.logo} source={require('../assets/icons/logoBookLibrary.png')} />
-            <Text style={styles.loginText}>Reset Password</Text>
+            <Text style={styles.loginText}>Change Password</Text>
             <TextInput
-                placeholder='Email Address'
+                placeholder='Your new password'
                 placeholderTextColor='#808e9b'
                 style={styles.input}
-                autoCorrect={true}
-                autoCapitalize={false}
-                autoCompleteType='email'
-                keyboardType='email-address'
-                textContentType='emailAddress'
-                value={email}
-                onChangeText={setEmail}
+                secureTextEntry={true}
+                textContentType='password'
+                value={pass}
+                onChangeText={setPass}
+            />
+            <TextInput
+                placeholder='Confirm new password'
+                placeholderTextColor='#808e9b'
+                style={styles.input}
+                secureTextEntry={true}
+                textContentType='password'
+                value={confirmPass}
+                onChangeText={setConfirmPass}
             />
             <TouchableOpacity>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginButton} onPress={requestResetPass}>
-          <Text style={styles.loginButtonText}>Reset</Text>
+        <TouchableOpacity style={styles.loginButton} onPress={updatePassword} >
+          <Text style={styles.loginButtonText}>Reset now</Text>
         </TouchableOpacity>
-            <View style={styles.loginWithBar} onPress={SignInWithGoogle} >
-            <TouchableOpacity style={styles.iconButton}>
-              <Image style={styles.icons} source={require('../assets/icons/google-plus.png')} />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.iconButton}>
-              <Image style={styles.icons} source={require('../assets/icons/facebook.png')} />  
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.iconButton}>
-              <Image style={styles.icons} source={require('../assets/icons/twitter.png')} />  
-            </TouchableOpacity>
-            </View>
-            <View style={styles.signUpTextView}>
-            <Text style={styles.signUpText}>Already have an account?</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-                <Text style={[styles.signUpText, { color: COLORS.primary }]}>
-                {' Login '}
-                </Text>
-            </TouchableOpacity>
-            </View>
+        <TouchableOpacity style={styles.loginButton} onPress={() => navigation.goBack()} >
+          <Text style={styles.loginButtonText}>Back</Text>
+        </TouchableOpacity>
+
         </SafeAreaView>
     );
 }
@@ -166,4 +154,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default ForgotPassword;
+export default ChangePassword;

@@ -9,7 +9,8 @@ import {
     FlatList,
     StyleSheet,
     Text,
-    Alert
+    Alert,
+    StatusBar
 } from 'react-native';
 import { create } from "react-test-renderer";
 
@@ -76,6 +77,11 @@ const FindBook = ({navigation}) => {
 
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: COLORS.black}}>
+            <StatusBar
+                    animated={true}
+                    backgroundColor= {COLORS.black}
+                    hidden={false}
+            />
             <View style={{flex: 1, margin: 15}}>
                 <TextInput
                     value={find}

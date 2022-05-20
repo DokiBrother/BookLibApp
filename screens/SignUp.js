@@ -19,6 +19,8 @@ import SignInWithGoogle from '../service/SignInWithGoogle';
 const SignUp = ({navigation}) => {
 
   const [namecalled, onChangeNameCalled] = React.useState();
+  const [studentID, setStudentID] = React.useState();
+
   const [email, onChangeEmail] = React.useState(null);
   const [pass, onChangePass] = React.useState(null);
   const [confirmPass, onChangeConfirmPass] = React.useState(null);
@@ -30,7 +32,7 @@ const SignUp = ({navigation}) => {
     .then(() => {
         auth().currentUser.updateProfile({
             displayName: namecalled,
-            photoURL: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'
+            photoURL: 'https://firebasestorage.googleapis.com/v0/b/book-library-app-group1.appspot.com/o/profile.jpg?alt=media&token=ca604ace-0410-43df-9946-2bde2c90c0b8'
         });
     })
     .catch(error => {
@@ -64,6 +66,8 @@ const SignUp = ({navigation}) => {
                   placeholderTextColor='#808e9b'
                   style={styles.input}
                   autoCorrect={true}
+                  value={studentID}
+                  onChangeText={setStudentID}
               />
               <TextInput
                   placeholder='Email Address'

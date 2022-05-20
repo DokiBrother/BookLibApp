@@ -12,6 +12,7 @@ import ForgotPassword from './screens/ForgotPassword';
 import auth from '@react-native-firebase/auth';
 import FindBook from './screens/FindBook';
 import ActionBook from './constants/ActionBook';
+import ChangePassword from './screens/ChangePassword';
 
 const theme = {
     ...DefaultTheme,
@@ -81,6 +82,7 @@ const App = () => {
                             <Stack.Screen name="ReadBook" component={ReadBook} options={{ headerShown: false }} />
                             <Stack.Screen name="ActionBook" component={ActionBook} options={{ headerShown: false }} />
                             <Stack.Screen name="FindBook" component={FindBook} options={{ headerShown: false }} />
+                            <Stack.Screen name="ChangePassword" component={ChangePassword} options={{ headerShown: false }} />
                         </>
                     )
                     }
