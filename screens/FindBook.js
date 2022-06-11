@@ -30,7 +30,7 @@ const FindBook = ({navigation}) => {
     }, [])
 
     const fetchBook = () => {
-        const apiURL = 'http://192.168.1.9:3000/post'
+        const apiURL = 'http://192.168.182.1:3000/post'
         fetch(apiURL)
         .then((respone) => respone.json())
         .then((responeJson) => {

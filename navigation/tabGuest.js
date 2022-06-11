@@ -6,7 +6,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { icons, COLORS } from "../constants";
 import { Setting, Category, FindBook, Profile} from "../screens/";
 import HomeGuest from "../screens/HomeGuest";
-import SettingGuest from "../screens/SettingGuest";
 
 const Tab = createBottomTabNavigator();
 
@@ -66,7 +65,7 @@ const TabGuest = () => {
                                 />
                             )
 
-                        case "SettingGuest":
+                        case "Setting":
                             return (
                                 <Image
                                     source={icons.setting_icon}
@@ -95,8 +94,8 @@ const TabGuest = () => {
                 component={Category}
             />
             <Tab.Screen
-                name="SettingGuest"
-                component={SettingGuest}
+                name="Setting"
+                component={Setting}
             />
         </Tab.Navigator>
     )
